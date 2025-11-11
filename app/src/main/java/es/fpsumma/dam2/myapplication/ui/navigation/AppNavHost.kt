@@ -1,6 +1,7 @@
 package es.fpsumma.dam2.myapplication.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -10,9 +11,12 @@ import es.fpsumma.dam2.myapplication.ui.screens.viewprofile.ViewProfileScreen
 
 @Composable
 fun AppNavHost(navController: NavHostController) {
+
+    val nombreState=remember{ mutableStateOf("") }
+
     NavHost(navController = navController, startDestination = Routes.HOME) {
         composable(Routes.HOME) { HomeScreen(navController) }
-        composable(Routes.PROFILE) { ViewProfileScreen(navController) }
+        composable(Routes.PROFILE) { ViewProfileScreen(navController ) }
         composable(Routes.EDITPROFILE) { EditProfileScreen(navController) }
 
 

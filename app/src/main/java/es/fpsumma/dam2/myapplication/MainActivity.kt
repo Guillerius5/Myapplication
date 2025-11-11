@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
 import es.fpsumma.dam2.myapplication.ui.navigation.AppNavHost
 import es.fpsumma.dam2.myapplication.ui.theme.MyApplicationTheme
-
+import es.fpsumma.dam2.myapplication.R
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

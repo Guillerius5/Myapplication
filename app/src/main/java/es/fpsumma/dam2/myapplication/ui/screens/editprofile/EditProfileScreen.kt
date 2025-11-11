@@ -35,7 +35,7 @@ import es.fpsumma.dam2.myapplication.ui.navigation.Routes
 @Composable
 fun EditProfileScreen(navController: NavController) {
 
-    var variableTexto by rememberSaveable { mutableStateOf("") }
+    var nombreState by rememberSaveable { mutableStateOf("") }
 
 
 
