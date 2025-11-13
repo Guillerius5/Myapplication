@@ -1,8 +1,6 @@
 package es.fpsumma.dam2.myapplication.ui.screens.home
 
 
-import android.R
-import android.R.attr.enabled
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -11,15 +9,12 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.Label
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.internal.isLiveLiteralsEnabled
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import es.fpsumma.dam2.myapplication.ui.navigation.Routes
-
-
 
 
 
@@ -45,7 +40,6 @@ fun HomeScreen(navController: NavController) {
         Card(modifier = Modifier.padding(start=20.dp).padding(end=20.dp).padding(top = 50.dp))
 
         {
-
             Text(
                 text="¿Sabias que ...?",
                 fontWeight = FontWeight.Bold

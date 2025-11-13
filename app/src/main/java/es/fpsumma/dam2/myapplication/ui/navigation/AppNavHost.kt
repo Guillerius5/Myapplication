@@ -12,7 +12,7 @@ import es.fpsumma.dam2.myapplication.ui.screens.viewprofile.ViewProfileScreen
 @Composable
 fun AppNavHost(navController: NavHostController) {
 
-    val nombreState=remember{ mutableStateOf("") }
+
 
     NavHost(navController = navController, startDestination = Routes.HOME) {
         composable(Routes.HOME) { HomeScreen(navController) }
